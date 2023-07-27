@@ -1,0 +1,44 @@
+﻿@page "/"
+@using System.Text
+@using BlazingChartGPT.Data;
+
+@inject ChartGPTService chatService
+
+<PageTitle>Chart GPT</PageTitle>
+<body>
+<EditForm Model="@AIRequest">
+    <div class="searchArea">
+        <button @onclick="GetAPIResponse"> Submit </button>
+        <div class="inputDiv">
+        <InputText class="form-control" @bind-Value="@AIRequest.Request" placeholder="Ask me anything.." />
+        </div>
+    </div>
+
+    <div class="searchResult">
+        <InputTextArea class="form-control" style="height:450px" @bind-Value="@AIRequest.Response" placeholder="AI will respond here..." readonly />
+    </div>
+</EditForm>
+</body>
+  <div class="credits">
+    Designed by <a href="https://www.linkedin.com/in/rikampalkar/">Rikam Palkar</a><br>
+    Integrated with <a href="https://openai.com/blog/chatgpt">ChatGPT</a> API<br>
+  </div>
+@code{
+    Message AIRequest = new();
+
+    public async Task GetAPIResponse()
+    {
+        try
+        {
+            AIRequest.Response = await chatService.GetResponse(AIRequest.Request);
+        }
+        catch (Exception)
+        {
+        }
+    }
+
+    class Message{
+       public string Request { get; set; }
+       public string Response { get; set; }
+    }
+}
