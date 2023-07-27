@@ -1,4 +1,4 @@
-# BlazorSimplified
+# Blazor Simplified
 Welcome to the official GitHub repository for the book "Blazor Simplified"!
 This repository serves as a comprehensive collection of code snippets, examples, and resources that complement the content covered in the book.
 
