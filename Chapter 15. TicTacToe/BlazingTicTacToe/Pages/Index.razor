@@ -1,0 +1,19 @@
+﻿@page "/"
+@inject IJSRuntime JS
+
+<div>
+    <h1>Blazing Tic Tac Toe</h1>
+    <div class="board">
+        @for(int i=0; i< 3; i++)
+        {
+            int row = i;
+            for (int j = 0; j < 3; j++)
+            {
+                int col = j;
+                <div class="square" @onclick="()=> SquareCliked(row, col)">
+                    <h5 class="char">@board[row, col]</h5>
+                </div>
+            }
+        }
+    </div>
+</div>
