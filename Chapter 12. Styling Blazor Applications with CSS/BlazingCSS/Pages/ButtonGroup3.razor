@@ -1,0 +1,34 @@
+﻿<div class="button-group">
+    <h3>Group 3: </h3>
+    <button style="background-color: @BackgroundColor; 
+                   color: @TextColor; 
+                   padding: @Padding; 
+                   border: @Border; 
+                   border-radius: @Radius">
+                   Button 5
+    </button>
+
+    <button class=button6-internalStyle>
+            Button 6
+    </button>
+</div>
+<style>
+    .button6-internalStyle {
+        background-color: tomato;
+        color: @TextColor;
+        padding: @Padding;
+        border: @Border;
+        border-radius: @Radius;
+    }
+</style>
+@code {
+    [Parameter] public string BackgroundColor { get; set; } = "Plum";
+    [Parameter] public string TextColor { get; set; } = "white";
+    [Parameter] public string Padding { get; set; } = "10px 20px";
+    [Parameter] public string Border { get; set; } = "none";
+    [Parameter] public string Radius { get; set; } = "4px";
+}
+
+
+
+

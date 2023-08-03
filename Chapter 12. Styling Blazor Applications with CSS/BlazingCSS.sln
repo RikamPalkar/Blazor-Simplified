@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32819.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazingCSS", "BlazingCSS\BlazingCSS.csproj", "{A95C526E-18D2-40DD-913D-1827A399CAA6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A95C526E-18D2-40DD-913D-1827A399CAA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A95C526E-18D2-40DD-913D-1827A399CAA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A95C526E-18D2-40DD-913D-1827A399CAA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A95C526E-18D2-40DD-913D-1827A399CAA6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1F1CD836-1C99-4E1F-ADF7-73AD4EB3A187}
+	EndGlobalSection
+EndGlobal
