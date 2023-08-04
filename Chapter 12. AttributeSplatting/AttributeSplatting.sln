@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AttributeSplatting", "AttributeSplatting\AttributeSplatting.csproj", "{461B8B01-1EEF-4AD2-B385-C36FE0064E99}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{461B8B01-1EEF-4AD2-B385-C36FE0064E99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{461B8B01-1EEF-4AD2-B385-C36FE0064E99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{461B8B01-1EEF-4AD2-B385-C36FE0064E99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{461B8B01-1EEF-4AD2-B385-C36FE0064E99}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AB9D2331-ED67-4D56-9998-3AB9226DC900}
+	EndGlobalSection
+EndGlobal

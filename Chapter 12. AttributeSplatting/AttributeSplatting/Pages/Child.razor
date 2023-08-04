@@ -1,0 +1,26 @@
+﻿<div class="boxChild" style="width:350px;">
+    <h3 style="padding:5px;">Child</h3>
+
+    <form>
+        <label>Name:</label>
+        <input @attributes="CustomAttributes" autofocus><br><br>
+
+        <input class="btn btn-success" type="submit" value="Submit">
+    </form>
+
+</div>
+<style>
+    .boxChild {
+        background-color: rgb(220, 210, 240);
+        border: 5px solid #123524;
+        width: 250px;
+        margin-left: 30px;
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+</style>
+
+@code {
+    [Parameter]
+    public Dictionary<string, object> CustomAttributes { get; set; }
+}

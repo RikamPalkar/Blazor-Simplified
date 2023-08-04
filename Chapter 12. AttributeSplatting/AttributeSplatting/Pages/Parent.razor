@@ -1,0 +1,26 @@
+﻿@page "/Parent"
+<h3 class="box" style="width:450px;padding:5px;">Parent</h3>
+<Child CustomAttributes=@CustomAttributes></Child>
+
+<style>
+.box {
+    background-color: rgb(224, 206, 247);
+    border: 5px solid rebeccapurple;
+}
+</style>
+@code {
+    
+    public Dictionary<string, object> CustomAttributes { get; set; }
+
+    protected override void OnInitialized()
+    {
+        CustomAttributes = new()
+            {
+                { "type", "text" },
+                { "height", "20" },
+                { "placeholder", "Enter your name!" },
+                { "maxlength", "15" },
+                { "size", "25" }
+            };
+    }
+}

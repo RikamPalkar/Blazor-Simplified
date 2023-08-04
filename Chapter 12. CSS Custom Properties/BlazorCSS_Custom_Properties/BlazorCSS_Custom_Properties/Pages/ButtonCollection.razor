@@ -1,0 +1,53 @@
+﻿@page "/buttons"
+@using BlazorCSS_Custom_Properties.Model
+
+<Button Attributes=@ListOfButtonStyle[0]></Button>
+<Button Attributes=@ListOfButtonStyle[1]></Button>
+<Button Attributes=@ListOfButtonStyle[2]></Button>
+<Button Attributes=@ListOfButtonStyle[3]></Button>
+@code {
+    public List<ButtonStyle> ListOfButtonStyle { get; set; }
+
+    protected override void OnInitialized()
+    {
+        ListOfButtonStyle = new()
+        {
+            new ButtonStyle()
+            {
+                Content = "Ok",
+                FontSize = "12px",
+                Height = "20px",
+                Width = "50px",
+                BackgroundColor="#4CAF50",
+                ForegroundColor="#FFFFFF"
+            },
+            new ButtonStyle()
+            {
+                Content = "Submit",
+                FontSize = "15px",
+                Height = "25px",
+                Width = "100px",
+                BackgroundColor="#008CBA",
+                ForegroundColor="#FFFFFF"
+            },
+            new ButtonStyle()
+            {
+                Content = "Cancel",
+                FontSize = "18px",
+                Height = "30px",
+                Width = "150px",
+                BackgroundColor="#f44336",
+                ForegroundColor="#FFFFFF"
+            },
+            new ButtonStyle()
+            {
+                Content = "Click Me",
+                FontSize = "21px",
+                Height = "35px",
+                Width = "200px",
+                BackgroundColor="#555555",
+                ForegroundColor="#FFFFFF"
+            }
+        };
+    }    
+}

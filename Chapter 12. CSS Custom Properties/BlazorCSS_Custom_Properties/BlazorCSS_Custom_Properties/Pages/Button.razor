@@ -1,0 +1,21 @@
+﻿@using BlazorCSS_Custom_Properties.Model
+
+<button style="--btn-width:@Attributes.Width;
+               --btn-height:@Attributes.Height; 
+               --btn-fontSize:@Attributes.FontSize;
+               --btn-foreground:@Attributes.ForegroundColor;
+               --btn-background:@Attributes.BackgroundColor;">@Attributes.Content</button>
+
+<style>
+    button {
+        width: var(--btn-width);
+        height: var(--btn-height);
+        font-size: var(--btn-fontSize);
+        color: var(--btn-foreground);
+        background-color: var(--btn-background);
+    }
+</style>
+@code {
+    [Parameter]
+    public ButtonStyle Attributes { get; set; }
+}
