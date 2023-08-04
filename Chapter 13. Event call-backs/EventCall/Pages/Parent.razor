@@ -1,0 +1,59 @@
+﻿@page "/parent"
+<style>
+    body {
+        background-color: #142F43;
+    }
+</style>
+<h3 class="text-primary">Parent</h3>
+<p style="color:#71DFE7;">Selected Product: @SelectedProductName</p>
+<div class="border p-2 mt-2 " style="background-color:#203239">
+    <div class="d-flex p-2">
+        @foreach (SmartPhone smartPhone in SmartPhones)
+        {
+            <Child SmartPhone=@smartPhone
+            OnProductSelected="SelectedProductUpdate"/>
+        }
+    </div>
+</div>
+
+@code {
+    List<SmartPhone> SmartPhones = new();
+    private int SelectedFavouriteCount { get; set; } = 0;        
+    private string SelectedProductName { get; set; } = "";   
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        SmartPhones.Add(new()
+            {  
+                Id = 1,
+                SmartPhoneName = "iPhone 12",
+                IsAvailable = false,
+                Price = "$ 850",
+                SmartPhoneFeatures = new()
+                {
+                    new Feature { Specification = "Chip", Value = "A14 Bionic chip" },
+                    new Feature { Specification = "Display", Value = "Super Retina XDR display" },
+                    new Feature { Specification = "Camera", Value = "Wide and Ultra Wide" }
+                }
+            });
+        SmartPhones.Add(new()
+            {  
+                Id = 2,
+                SmartPhoneName = "iPhone 13",
+                IsAvailable = false,
+                Price = "$ 1050",
+                SmartPhoneFeatures = new()
+                {
+                    new Feature { Specification = "Chip", Value = "A15 Bionic chip" },
+                    new Feature { Specification = "Display", Value = "Super Retina XDR display" },
+                    new Feature { Specification = "Camera", Value = "Telephoto, Wide and Ultra Wide" }
+                }
+            });
+    }
+
+    protected void SelectedProductUpdate(string productName)
+    {
+        SelectedProductName = productName;
+    }
+}
+

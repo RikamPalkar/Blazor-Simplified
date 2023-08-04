@@ -1,0 +1,24 @@
+﻿<h3 style="color:#BFFFF0;">Child: @SmartPhone.Id </h3>
+<div class="border m-2 col-5"  style="background-color:#D1D1D1" >
+    <h4 class="text-secondary m-1"> Smart Phone: @SmartPhone.Id </h4>
+    <h4 class="m-2" style="color:#051367;">@SmartPhone.SmartPhoneName </h4>
+
+        @foreach (var feature in SmartPhone.SmartPhoneFeatures)
+        {
+            <p class="m-1" style="color:#8E0505;">@feature.Specification -  @feature.Value</p>
+        }
+    <input type="button" class="btn btn-success m-1" @onclick="(args)=> ProductSelected(args, SmartPhone.SmartPhoneName)" style="width:200px;" value="Send Name: @SmartPhone.SmartPhoneName"/>
+</div>
+@code {
+    [Parameter]
+    public SmartPhone SmartPhone { get; set; }
+
+    [Parameter]
+    public EventCallback<string> OnProductSelected { get; set; }        
+
+    private async Task ProductSelected(MouseEventArgs e, string name)
+    {
+        await OnProductSelected.InvokeAsync(name);
+    }
+}
+
