@@ -1,0 +1,24 @@
+﻿<div class="boxChild">
+    <h5 class="m-1">Child</h5>
+    <h6>string: @FirstMessageFromParent</h6>
+    <h6>string: @SecondMessageFromParent</h6>
+</div>
+<style>
+    .boxChild {
+        background-color: 
+#B7E5DD;
+        border: 5px solid 
+#123524;
+        width: 400px;
+        margin-left: 30px;
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+</style>
+@code {
+    [CascadingParameter(Name = "First")]
+    public string FirstMessageFromParent { get; set; }
+
+    [CascadingParameter(Name = "Second")]
+    public string SecondMessageFromParent { get; set; }
+}

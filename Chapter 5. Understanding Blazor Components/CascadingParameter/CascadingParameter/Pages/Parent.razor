@@ -1,0 +1,14 @@
+﻿@page "/Parent"
+<h5 class="box" style="width:450px;padding:5px;">Parent</h5>
+<CascadingValue Value="@Message">
+<Child></Child>
+</CascadingValue>
+<style>
+    .box {
+        background-color: rgb(224, 206, 247);
+        border: 5px solid rebeccapurple;
+    }
+</style>
+@code {
+    public string Message { get; set; } = "Hi from Parent!";
+}

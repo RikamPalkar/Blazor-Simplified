@@ -1,0 +1,19 @@
+﻿<div class="boxGrandChild">
+    <h5 class="m-1">GrandChild</h5>
+    <h6>@MessageDifferentName</h6>   
+</div>
+<GreatGrandChild></GreatGrandChild>
+<style>
+    .boxGrandChild {
+        background-color: #B4C6A6;
+        border: 5px solid #293462;
+        width: 360px;
+        margin-left: 50px;
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+</style>
+@code {
+    [CascadingParameter]
+    public string MessageDifferentName { get; set; }
+}

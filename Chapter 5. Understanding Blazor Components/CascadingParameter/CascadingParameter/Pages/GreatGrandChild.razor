@@ -1,0 +1,18 @@
+﻿<div class="boxGreatGrandChild">
+    <h5 class="m-1">Great GrandChild</h5>
+    <h6>@Message</h6>
+</div>
+<style>
+    .boxGreatGrandChild {
+        background-color: #F9CEEE;
+        border: 5px solid #9A0680;
+        width: 330px;
+        margin-left: 60px;
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+</style>
+@code {
+    [CascadingParameter]
+    public int Message { get; set; }
+}

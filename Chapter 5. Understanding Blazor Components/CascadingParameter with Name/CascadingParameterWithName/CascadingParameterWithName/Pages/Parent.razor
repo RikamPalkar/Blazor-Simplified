@@ -1,0 +1,21 @@
+﻿@page "/Parent"
+<h5 class="box" style="width:450px;padding:5px;">Parent, sending string & string to child</h5>
+<CascadingValue Value="@FirstMessage" Name="First">
+    <CascadingValue Value="@SecondMessage" Name="Second">
+            <Child></Child>
+    </CascadingValue>
+</CascadingValue>
+<style>
+    .box {
+        background-color: 
+rgb(224, 206, 247);
+        border: 5px solid rebeccapurple;
+    }
+</style>
+@code {
+    //First CascadingParameter
+    public string FirstMessage { get; set; } = "First msg: Hi from Parent!";
+
+    //Second CascadingParameter
+    public string SecondMessage { get; set; } = "Second msg: Hello again from Parent!";
+}
