@@ -1,0 +1,27 @@
+﻿<style>
+    .boxChild {
+        background-color: rgb(220, 210, 240);
+        border: 5px solid #123524;
+        width: 210px;
+        margin-left: 30px;
+        margin-bottom: 10px;
+        padding:5px;
+    }
+</style>
+<div class="box" style="width:300px;">
+    <h3 style="padding:5px;">Child</h3>
+    <div class="boxChild">
+        <h4>@First_ChildContent</h4>
+    </div>
+    <div class="boxChild">
+        <h4>@Another_ChildContent</h4>
+    </div>
+</div>
+@code {
+    [Parameter]
+    public RenderFragment? First_ChildContent { get; set; }
+
+    [Parameter]
+    public RenderFragment? Another_ChildContent { get; set; }
+
+}
