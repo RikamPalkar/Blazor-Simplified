@@ -1,0 +1,30 @@
+﻿@page "/counter"
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<p role="status">Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+<ul>
+    <li><NavLink href="/">Home</NavLink></li>
+    <li><NavLink href="/pageone">Page 1</NavLink></li>
+    <li>
+        <NavLink href="/pagetwo">Page 2</NavLink>
+        <ul>
+            <li><NavLink href="/pagetwo/a">PageTwo - A </NavLink></li>
+            <li><NavLink href="/pagetwo/b">PageTwo - B </NavLink></li>
+        </ul>
+    </li>
+</ul>
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}
