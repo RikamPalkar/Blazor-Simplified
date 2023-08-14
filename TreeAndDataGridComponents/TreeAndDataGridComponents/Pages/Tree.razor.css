@@ -1,0 +1,86 @@
+﻿/* Tree component styles */
+
+.tree {
+    list-style: none;
+    padding-left: 0;
+}
+
+.tree > li {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    line-height: 1.6;
+}
+
+.tree > li > span.toggle {
+    margin-right: 0.5em;
+    cursor: pointer;
+    color: #007bff;
+}
+
+.tree > li > span.toggle:hover {
+    text-decoration: underline;
+}
+
+.tree > li > span.toggle::before {
+    content: "\25B6"; /* Right-pointing triangle */
+}
+
+.tree ul {
+    list-style: none;
+    padding-left: 1em;
+    margin: 0;
+}
+
+.tree ul li {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    line-height: 1.6;
+}
+
+.tree ul li > span.toggle {
+    margin-right: 0.5em;
+    cursor: pointer;
+    color: #007bff;
+}
+
+.tree ul li > span.toggle:hover {
+    text-decoration: underline;
+}
+
+.tree ul li > span.toggle::before {
+    content: "\25B6"; /* Right-pointing triangle */
+}
+
+.tree ul li > ul.nested {
+    display: none;
+    padding-left: 1em;
+}
+
+.tree ul li > span.toggle.collapsed::before {
+    content: "\25B8"; /* Right-pointing triangle, rotated 90 degrees */
+}
+
+.tree ul li > span.toggle.expanded::before {
+    content: "\25BE"; /* Down-pointing triangle */
+}
+
+.tree ul li.expanded > ul.nested {
+    display: block;
+}
+
+/* Text styles */
+    .tree > li > span,
+    .tree ul li > span {
+        font-size: 16px;
+        font-weight: bold;
+        color: #AD1457;
+    }
+
+    .tree ul li > ul.nested {
+        font-size: 14px;
+        font-weight: normal;
+        color: #FF3D00;
+        margin-left:45px;
+    }

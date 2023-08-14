@@ -1,0 +1,34 @@
+﻿@page "/tree"
+@using System.Collections.Generic
+@using TreeAndDataGridComponents.Data
+@inject IPhoneService phoneService;
+@inject IJSRuntime jsRuntime;
+<h3>Tree Component</h3>
+<ul class="tree">
+    @foreach (var manufacturer in GetDistinctManufacturers())
+    {
+        <li>
+            <span class="toggle" @onclick="() => ToggleManufacturer(manufacturer)">
+               @(IsManufacturerExpanded(manufacturer) ? "[-]" : "[+]")
+            </span>
+            <span>@manufacturer</span>
+            <ul class="nested" style="display: @(IsManufacturerExpanded(manufacturer) ? "block" : "none")">
+                @foreach (var os in GetDistinctOS(manufacturer))
+                {
+                    <li>
+                        <span class="toggle" @onclick="() => ToggleOS(manufacturer, os)">
+                            @(IsOSExpanded($"{manufacturer}/{os}") ? "[-]" : "[+]")
+                        </span>
+                        <span>@os</span>
+                        <ul class="nested" style="display: @(IsOSExpanded($"{manufacturer}/{os}") ? "block" : "none")">
+                            @foreach (var phone in GetPhonesByManufacturerAndOS(manufacturer, os))
+                            {
+                                <li>@phone.Name</li>
+                            }
+                        </ul>
+                    </li>
+                }
+            </ul>
+        </li>
+    }
+</ul>
