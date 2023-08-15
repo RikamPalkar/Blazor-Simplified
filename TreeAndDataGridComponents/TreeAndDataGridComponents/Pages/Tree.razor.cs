@@ -1,4 +1,3 @@
-using Microsoft.JSInterop;
 using TreeAndDataGridComponents.Data;
 
 namespace TreeAndDataGridComponents.Pages
@@ -47,6 +46,7 @@ namespace TreeAndDataGridComponents.Pages
                 expandedOS[$"{manufacturer}/{os}"] = false;
             }
         }
+
         void ToggleOS(string manufacturer, string os)
         {
             expandedOS[$"{manufacturer}/{os}"] = !expandedOS.ContainsKey($"{manufacturer}/{os}") || !expandedOS[$"{manufacturer}/{os}"];

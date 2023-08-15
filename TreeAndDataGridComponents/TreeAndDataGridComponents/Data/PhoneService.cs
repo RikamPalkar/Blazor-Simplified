@@ -1,4 +1,6 @@
-﻿namespace TreeAndDataGridComponents.Data
+﻿using TreeAndDataGridComponents.Data;
+
+namespace TreeAndDataGridComponents.Data
 {
     public class PhoneService : IPhoneService
     {
