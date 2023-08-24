@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{7FD41DC0-290E-4D4D-B143-E0CEAAE1B34F}|https">
+  <MonoDevelop.Ide.ItemProperties.TreeComponent PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="TreeComponent/Shared/NavMenu.razor">
+    <Files>
+      <File FileName="TreeComponent/Data/IPhoneService.cs" />
+      <File FileName="TreeComponent/Data/Phone.cs" />
+      <File FileName="TreeComponent/Data/PhoneService.cs" />
+      <File FileName="TreeComponent/Program.cs" />
+      <File FileName="TreeComponent/Pages/Tree.razor" />
+      <File FileName="TreeComponent/Pages/Tree.razor.cs" />
+      <File FileName="TreeComponent/Pages/Tree.razor.css" />
+      <File FileName="TreeComponent/Shared/NavMenu.razor" Line="13" Column="45" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TreeComponent" expanded="True">
+            <Node name="TreeComponent">
+              <Node name="Data" expanded="True" />
+              <Node name="Shared" expanded="True">
+                <Node name="NavMenu.razor" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

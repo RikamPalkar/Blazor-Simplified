@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{650E31EC-A5AA-4524-89D2-018C45F233A6}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.TreeAndDataGridComponents PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TreeAndDataGridComponents/Pages/Index.razor">
+    <Files>
+      <File FileName="TreeAndDataGridComponents/Pages/Tree.razor" />
+      <File FileName="TreeAndDataGridComponents/Pages/Tree.razor.cs" />
+      <File FileName="TreeAndDataGridComponents/Pages/DataGrid.razor" />
+      <File FileName="TreeAndDataGridComponents/Pages/Index.razor" Line="13" Column="1" />
+      <File FileName="TreeAndDataGridComponents/Pages/Index.razor.css" />
+      <File FileName="TreeAndDataGridComponents/Data/PhoneService.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TreeAndDataGridComponents" expanded="True">
+            <Node name="TreeAndDataGridComponents">
+              <Node name="Pages" expanded="True">
+                <Node name="Index.razor" selected="True" />
+                <Node name="Tree.razor" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
