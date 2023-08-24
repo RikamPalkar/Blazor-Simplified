@@ -1,0 +1,40 @@
+﻿@using TreeAndDataGridComponents.Data
+
+<h3>Data Grid</h3>
+
+@if (Phones != null)
+{
+    <div class="table-container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Manufacturer</th>
+                    <th>Operating System</th>
+                    <th>Cost</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var phone in Phones)
+                {
+                    <tr>
+                        <td>@phone.Name</td>
+                        <td>@phone.Manufacturer</td>
+                        <td>@phone.OS</td>
+                        <td>@phone.Cost</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <p>Loading...</p>
+}
+
+@code {
+    [Parameter]
+    public List<Phone> Phones { get; set; }
+
+}

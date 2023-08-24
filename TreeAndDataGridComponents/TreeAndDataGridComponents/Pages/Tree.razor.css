@@ -53,11 +53,6 @@
     content: "\25B6"; /* Right-pointing triangle */
 }
 
-.tree ul li > ul.nested {
-    display: none;
-    padding-left: 1em;
-}
-
 .tree ul li > span.toggle.collapsed::before {
     content: "\25B8"; /* Right-pointing triangle, rotated 90 degrees */
 }

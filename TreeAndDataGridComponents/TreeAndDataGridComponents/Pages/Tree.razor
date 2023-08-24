@@ -9,23 +9,35 @@
     @foreach (var manufacturer in GetDistinctManufacturers())
     {
         <li>
-            <span class="toggle" @onclick="() => ToggleManufacturer(manufacturer)">
-               @(IsManufacturerExpanded(manufacturer) ? "[-]" : "[+]")
+            <span class="toggle" 
+                  @onclick="() => ToggleManufacturer(manufacturer)">
+                  @(IsManufacturerExpanded(manufacturer) ? "[-]" : "[+]")
             </span>
-            <span>@manufacturer</span>
-            <ul class="nested" style="display: @(IsManufacturerExpanded(manufacturer) ? "block" : "none")">
+            <span @onclick="() =>NodeClicked(manufacturer)">
+                  @manufacturer
+            </span>
+            <ul class="nested" 
+                style="display: @(IsManufacturerExpanded(manufacturer) ? "block" : "none")">
                 @foreach (var os in GetDistinctOS(manufacturer))
                 {
                     <li>
-                        <span class="toggle" @onclick="() => ToggleOS(manufacturer, os)">
+                        <span class="toggle" 
+                            @onclick="() => ToggleOS(manufacturer, os)">
                             @(IsOSExpanded($"{manufacturer}/{os}") ? "[-]" : "[+]")
                         </span>
-                        <span>@os</span>
-                        <ul class="nested" style="display: @(IsOSExpanded($"{manufacturer}/{os}") ? "block" : "none")">
-                            @foreach (var phone in GetPhonesByManufacturerAndOS(manufacturer, os))
-                            {
-                                <li>@phone.Name</li>
-                            }
+                        <span @onclick="() =>NodeClicked(manufacturer,os)">
+                              @os
+                        </span>
+                        <ul class="nested" 
+                            style="display: @(IsOSExpanded($"{manufacturer}/{os}") ? "block" : "none")">
+                            <li>
+                                @foreach (var phone in GetPhonesByManufacturerAndOS(manufacturer, os))
+                                {
+                                    <li @onclick="() => NodeClicked(phone: phone)">
+                                        @phone.Name
+                                    </li>
+                                }
+                            </li>
                         </ul>
                     </li>
                 }

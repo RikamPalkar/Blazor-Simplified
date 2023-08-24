@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Components;
 using TreeAndDataGridComponents.Data;
 
 namespace TreeAndDataGridComponents.Pages
@@ -8,6 +9,10 @@ namespace TreeAndDataGridComponents.Pages
         List<Phone> phones = new();
         Dictionary<string, bool> expandedManufacturers = new();
         Dictionary<string, bool> expandedOS = new();
+
+        [Parameter] 
+        public EventCallback<List<Phone>> SelectedNodeChanged { get; set; }
+        List<Phone> phonesToBeSent;
         #endregion
 
         #region [Methods]
@@ -50,6 +55,24 @@ namespace TreeAndDataGridComponents.Pages
         void ToggleOS(string manufacturer, string os)
         {
             expandedOS[$"{manufacturer}/{os}"] = !expandedOS.ContainsKey($"{manufacturer}/{os}") || !expandedOS[$"{manufacturer}/{os}"];
+        }
+
+        void NodeClicked(string manufacturer = "", string os ="", Phone phone = null)
+        {
+            if (!string.IsNullOrEmpty(os))
+            {
+                phonesToBeSent = phones.Where(p => p.Manufacturer == manufacturer && p.OS == os).ToList();
+            }
+            else if (!string.IsNullOrEmpty(manufacturer))
+            {
+                phonesToBeSent = phones.Where(p => p.Manufacturer == manufacturer).ToList();
+            }
+              
+            else if (phone != null)
+            {
+                phonesToBeSent = phones.Where(p => p.Name == phone.Name).ToList();
+            }
+            SelectedNodeChanged.InvokeAsync(phonesToBeSent);
         }
         #endregion
     }

@@ -1,4 +1,22 @@
 ﻿@page "/"
+@using TreeAndDataGridComponents.Data
+@inject IPhoneService phoneService;
 
-<PageTitle>Tree</PageTitle>
-<Tree></Tree>
+<div class="container">
+    <div class="tree-container">
+        <Tree SelectedNodeChanged="OnSelectedNodeChanged" />
+    </div>
+    <div class="datagrid-container">
+        <DataGrid Phones="filteredPhones" />
+    </div>
+</div>
+
+@code {
+
+    List<Phone> filteredPhones = new();
+
+    void OnSelectedNodeChanged(List<Phone> parameters)
+    {
+        filteredPhones = parameters;
+    }
+}

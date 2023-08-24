@@ -1,0 +1,17 @@
+﻿/* Apply styles to the container */
+.container {
+    display: flex; /* Use flexbox to arrange items side by side */
+    height: 100vh; /* Set container height to full viewport height */
+}
+
+/* Style the tree-container on the left */
+.tree-container {
+    flex: 1; /* Take up 1/2 of the container's width */
+    padding: 20px; /* Add some padding for spacing */
+}
+
+/* Style the datagrid-container on the right */
+.datagrid-container {
+    flex: 4; /* Take up 1/2 of the container's width */
+    padding: 20px; /* Add some padding for spacing */
+}

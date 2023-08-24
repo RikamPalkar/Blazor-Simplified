@@ -1,0 +1,30 @@
+﻿.table-container {
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+    background-color: #e5e4e2;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .table th, .table td {
+        padding: 10px;
+        text-align: left;
+    }
+
+    .table th {
+        background-color: #808080;
+        color: white; 
+    }
+
+    .table tbody td {
+        background-color: #e3e3e3;
+    }
+
+p {
+    font-style: italic;
+}
