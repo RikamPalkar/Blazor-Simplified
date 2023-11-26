@@ -1,0 +1,96 @@
+﻿<div class="auto-hiding-nav-menu"
+     @onmouseover="ExpandNavMenu"
+     @onmouseout="CollapseNavMenu">
+    <nav class="nav-menu @(collapseNavMenu ? "collapsed" : "expand")">
+        <div>
+            <NavLink class="nav-link" href="https://rikampalkar.github.io/" Match="NavLinkMatch.All">
+                <span class="bi bi-house nav-item-icon" aria-hidden="true">
+                    <span class="nav-item-text">Home</span>
+                </span>
+            </NavLink>
+            <NavLink class="nav-link" href="/">
+                <span class="bi bi-controller nav-item-icon">
+                    <span class="nav-item-text">TicTacToe</span>
+                </span>
+            </NavLink>
+            <NavLink class="nav-link" href="/">
+                <span class="bi bi-joystick nav-item-icon">
+                    <span class="nav-item-text">Snake</span>
+                </span>
+            </NavLink>
+            <NavLink class="nav-link" href="/">
+                <span class="bi bi-filetype-ppt nav-item-icon">
+                    <span class="nav-item-text">PPT</span>
+                </span>
+            </NavLink>
+            <NavLink class="nav-link" href="/">
+                <span class="bi bi-journal-text nav-item-icon">
+                    <span class="nav-item-text">Articles</span>
+                </span>
+            </NavLink>
+            <NavLink class="nav-link" href="/">
+                <span class="bi bi-award nav-item-icon">
+                    <span class="nav-item-text">Awards</span>
+                </span>
+            </NavLink>
+            <NavLink class="nav-link" href="/">
+                <span class="bi bi-camera-reels nav-item-icon">
+                    <span class="nav-item-text">Youtube</span>
+                </span>
+            </NavLink>
+            <NavLink class="nav-link" href="/">
+                <span class="bi bi-book nav-item-icon">
+                    <span class="nav-item-text">Books</span>
+                </span>
+            </NavLink>
+            <NavLink class="nav-link" href="/">
+                <span class="bi bi-columns-gap nav-item-icon">
+                    <span class="nav-item-text">Projects</span>
+                </span>
+            </NavLink>
+            <NavLink class="nav-link" href="/">
+                <span class="bi bi-discord nav-item-icon">
+                    <span class="nav-item-text">Discord</span>
+                </span>
+            </NavLink>
+            <NavLink class="nav-link" href="/">
+                <span class="bi bi-info-circle nav-item-icon">
+                    <span class="nav-item-text">About</span>
+                </span>
+            </NavLink>
+            <NavLink class="nav-link" href="/">
+                <span class="bi bi-person-lines-fill nav-item-icon">
+                    <span class="nav-item-text">Contact</span>
+                </span>
+            </NavLink>
+        </div>
+    </nav>
+</div>
+
+<style>
+    .nav-link {
+        margin-bottom: 10px;
+    }
+
+    .expand .nav-link {
+        margin-bottom: 18px;
+    }
+</style>
+
+@code {
+    private bool collapseNavMenu = true;
+    private bool isHovered = false;
+
+    private void ExpandNavMenu()
+    {
+        isHovered = true;
+        if (collapseNavMenu) collapseNavMenu = false;
+    }
+
+    private void CollapseNavMenu()
+    {
+        isHovered = false;
+        if (!collapseNavMenu) collapseNavMenu = true;
+    }
+
+}

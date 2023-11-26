@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{178532FF-65B1-489E-A459-08D03E7F9648}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="BlazingSnake/Pages/Snake.razor.cs">
+    <Files>
+      <File FileName="BlazingSnake/Pages/Snake.razor" Line="21" Column="27" />
+      <File FileName="BlazingSnake/Pages/Snake.razor.cs" Line="7" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BlazingSnake">
+            <Node name="BlazingSnake" expanded="True">
+              <Node name="Pages" expanded="True">
+                <Node name="Snake.razor" expanded="True">
+                  <Node name="Snake.razor.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.BlazingSnake PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MultiItemStartupConfigurations />
+</Properties>
