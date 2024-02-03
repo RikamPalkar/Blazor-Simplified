@@ -1,0 +1,53 @@
+﻿@page "/"
+@using LocalStorage
+@inject ProgrammingLanguageService LanguageService
+
+<div class="row">
+    <div class="col-md-4">
+        <h3>Add, Edit or Remove Language</h3>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" @bind="Language.Name" id="name" />
+        </div>
+        <div class="form-group">
+            <label for="creator">Creator:</label>
+            <input type="text" class="form-control" @bind="Language.Creator" id="creator" />
+        </div>
+        <div class="form-group">
+            <label for="year">Year:</label>
+            <input type="text" class="form-control" @bind="Language.Year" id="year" />
+        </div>
+        <div class="form-group mt-3">
+            <button class="btn btn-primary" @onclick="SaveLanguage">Save</button>
+            <button class="btn btn-danger" @onclick="DeleteLanguage">Delete</button>
+            <button class="btn btn-secondary" @onclick="LoadLanguage">Load</button>
+        </div>
+    </div>
+</div>
+
+@code {
+    private ProgrammingLanguage Language = new ProgrammingLanguage();
+
+    private async void SaveLanguage()
+    {
+        await LanguageService.AddOrUpdateLanguageAsync(Language.Name, new ProgrammingLanguage()
+        {
+            Name = Language.Name,
+            Creator = Language.Creator,
+            Year = Language.Year
+        });
+    }
+
+    private async void DeleteLanguage()
+    {
+        await LanguageService.DeleteLanguageAsync(Language.Name);
+        Language.Name = Language.Creator = string.Empty;
+        Language.Year = 0;
+    }
+
+    private async void LoadLanguage()
+    {
+        Language = await LanguageService.GetLanguageAsync(Language.Name);
+        StateHasChanged();
+    }
+}

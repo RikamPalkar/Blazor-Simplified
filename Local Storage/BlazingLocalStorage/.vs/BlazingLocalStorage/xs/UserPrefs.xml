@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{AF4C3A53-34DB-4D66-8B6E-A0216E592781}|https" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.BlazingLocalStorage PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="BlazingLocalStorage/Pages/ManageLanguage.razor">
+    <Files>
+      <File FileName="BlazingLocalStorage/Pages/ManageLanguage.razor" Line="5" Column="18" IsPinned="True" />
+      <File FileName="BlazingLocalStorage/Local Storage/ProgrammingLanguageService.cs" Line="6" Column="44" />
+      <File FileName="BlazingLocalStorage/Local Storage/LocalStorageService.cs" Line="30" Column="1" />
+      <File FileName="BlazingLocalStorage/Local Storage/ProgrammingLanguage.cs" Line="3" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BlazingLocalStorage" expanded="True">
+            <Node name="BlazingLocalStorage" expanded="True">
+              <Node name="Local Storage" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="ManageLanguage.razor" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>
