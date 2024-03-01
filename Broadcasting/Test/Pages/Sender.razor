@@ -1,0 +1,42 @@
+﻿@page "/"
+@using Events;
+@using Newtonsoft.Json;
+@inject IJSRuntime JS;
+
+<div class="row main-container">
+    <div class="col-md-4">
+        <h3>Add a Language</h3>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" @bind="Language.Name" id="name" />
+        </div>
+        <div class="form-group">
+            <label for="creator">Creator:</label>
+            <input type="text" class="form-control" @bind="Language.Creator" id="creator" />
+        </div>
+        <div class="form-group">
+            <label for="year">Year:</label>
+            <input type="text" class="form-control" @bind="Language.Year" id="year" />
+        </div>
+        <div class="form-group mt-3">
+            <button class="btn btn-primary" @onclick="SaveLanguageAsync">Save</button>
+        </div>
+    </div>
+</div>
+
+<style>
+    .main-container {
+        padding: 10px;
+    }
+</style>
+
+@code{
+    private ProgrammingLanguage Language = new ProgrammingLanguage();
+
+    private async void SaveLanguageAsync()
+    {
+        var obj = JsonConvert.SerializeObject(Language);
+        await JS.InvokeVoidAsync("sendBroadcast", new object[] { obj });
+    }
+
+}

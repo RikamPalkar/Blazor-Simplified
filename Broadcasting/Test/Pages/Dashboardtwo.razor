@@ -1,0 +1,41 @@
+﻿@page "/dashboardtwo"
+@using Events;
+@using Newtonsoft.Json;
+
+<h3>Programming Languages:</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Creator</th>
+            <th>Year</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var language in ProgrammingLanguages)
+        {
+            <tr>
+                <td>@language.Name</td>
+                <td>@language.Creator</td>
+                <td>@language.Year</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+<div id="broadcastingReceiver" @onBroadcast="ReceivedMessage" />
+
+
+@code {
+
+    private List<ProgrammingLanguage> ProgrammingLanguages = new();
+
+    private void ReceivedMessage(BroadcastEventArgs args)
+    {
+        var receivedLanguage = JsonConvert.DeserializeObject<ProgrammingLanguage>(args.data);
+        ProgrammingLanguages.Add(receivedLanguage);
+    }
+}
+

@@ -1,0 +1,37 @@
+﻿<Properties StartupConfiguration="{F4431286-EB06-4C5C-B14F-589ACA54A266}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Test/Pages/Sender.razor">
+    <Files>
+      <File FileName="Test/wwwroot/Broadcasting.js" />
+      <File FileName="Test/wwwroot/Test.lib.module.js" />
+      <File FileName="Test/Pages/Dashboard.razor" />
+      <File FileName="Test/wwwroot/index.html" />
+      <File FileName="Test/Pages/Dashboardtwo.razor" />
+      <File FileName="Test/Events/ProgrammingLanguage.cs" />
+      <File FileName="Test/Events/EventHandlers.cs" />
+      <File FileName="Test/Pages/Sender.razor" Line="18" Column="24" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Test" expanded="True">
+            <Node name="Test" expanded="True">
+              <Node name="Events" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="Sender.razor" selected="True" />
+              </Node>
+              <Node name="Properties" expanded="True" />
+              <Node name="wwwroot" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Test PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>
