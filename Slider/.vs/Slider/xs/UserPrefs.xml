@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{2DCDDD46-BBBD-4E44-9980-E1EC0C834C25}|https">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Slider PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Slider/Pages/SliderComponent.razor">
+    <Files>
+      <File FileName="Slider/Pages/Index.razor" />
+      <File FileName="Slider/Pages/SliderComponent.razor" Line="18" Column="9" />
+      <File FileName="Slider/Pages/SliderComponent.razor.css" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Slider" expanded="True">
+            <Node name="Slider" expanded="True">
+              <Node name="Pages" expanded="True">
+                <Node name="SliderComponent.razor" expanded="True" selected="True" />
+              </Node>
+              <Node name="Shared" expanded="True" />
+              <Node name="wwwroot" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>

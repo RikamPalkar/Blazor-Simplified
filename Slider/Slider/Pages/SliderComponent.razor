@@ -1,0 +1,61 @@
+﻿<div style="text-align: center;">
+    <h2>Enter Your Phone Number</h2>
+    <input class="slider"
+           type="range"
+           min="@Min"
+           max="@Max"
+           @bind="@Value"
+           @bind:event="oninput" />
+    <p>Phone Number: @Value</p>
+</div>
+
+<style>
+    .slider {
+        width: 800px;
+        height: 10px;
+        opacity: 0.7;
+        appearance: none; /*remove the default styling applied by the browser*/
+        border-radius: 5px;
+        margin-top: 20px;
+        background: linear-gradient(to right,
+                    #4CAF50 calc(@Value / @Max * 100%),
+                    #D3D3D3 calc(@Value / @Max * 100%));
+    }
+
+    .slider:hover {
+        opacity: 1;
+    }
+
+
+    p{
+        margin-top: 20px;
+    }
+</style>
+
+@code {
+    [Parameter]
+    public int Min { get; set; }
+
+    [Parameter]
+    public int Max { get; set; }
+
+    [Parameter]
+    public int Value { get; set; }
+
+    // Event callback to notify changes
+    [Parameter]
+    public EventCallback<int> ValueChanged { get; set; }
+
+    protected override void OnInitialized()
+    {
+        // Ensure that the initial value is within the valid range
+        if (Value < Min)
+        {
+            Value = Min;
+        }
+        else if (Value > Max)
+        {
+            Value = Max;
+        }
+    }
+}
