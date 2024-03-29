@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{E8872E8C-B605-4254-9562-39EE1318F068}|https">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SignatureApp/Pages/Signature.razor.css">
+    <Files>
+      <File FileName="SignatureApp/Pages/Signature.razor" />
+      <File FileName="SignatureApp/wwwroot/js/signature.js" />
+      <File FileName="SignatureApp/Pages/Signature.razor.css" Line="10" Column="25" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SignatureApp" expanded="True">
+            <Node name="SignatureApp" expanded="True">
+              <Node name="Pages" expanded="True">
+                <Node name="Signature.razor" expanded="True">
+                  <Node name="Signature.razor.css" selected="True" />
+                </Node>
+              </Node>
+              <Node name="Shared" expanded="True" />
+              <Node name="wwwroot" expanded="True">
+                <Node name="js" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.SignatureApp PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+</Properties>

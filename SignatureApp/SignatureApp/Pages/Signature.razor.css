@@ -1,0 +1,53 @@
+﻿
+
+h1 {
+    text-align: center;
+}
+
+canvas {
+    width: 500px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.canvas-container {
+    display: flex;
+    justify-content: center;
+}
+
+.colorpicker-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.colorpicker-style {
+    width: 305px;
+    height: 30px;
+    border: none;
+}
+
+.savebutton-style {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    background: #085445;
+    color: #ffffff;
+    border: 2px solid #0E6251;
+}
+
+.resetbutton-style {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    background: #CB4335;
+    color: #ffffff;
+    border: 2px solid #CB4335;
+}

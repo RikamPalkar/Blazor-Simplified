@@ -1,0 +1,67 @@
+﻿@page "/"
+@using Microsoft.JSInterop
+@inject IJSRuntime JSRuntime
+
+<h1>Please draw your signature</h1>
+
+<div class="canvas-container">
+    <canvas style="border: 2px solid @selectedColor;"
+            @ref="canvas"></canvas>
+</div>
+
+<div class="colorpicker-container">
+    <label for="colorPicker">Select Color: </label>
+    <input type="color"typeof=""
+           id="colorPicker"
+           class="colorpicker-style"
+           @bind="selectedColor"
+           @oninput="ChangeColor" />
+</div>
+
+<div class="button-container">
+    <button class="savebutton-style" @onclick="SaveSignature">Save</button>
+    <button class="resetbutton-style" @onclick="ResetSignature">Reset</button>
+</div>
+
+@code {
+    private ElementReference canvas;
+    private bool isMouseDown = false;
+    private string imageData;
+    private string selectedColor = "#000000"; // Default color is black
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JSRuntime.InvokeVoidAsync("initializeCanvas", canvas, selectedColor);
+            await UpdateCanvasSize();
+        }
+    }
+
+    private async Task SaveSignature()
+    {
+        // Get the canvas data URL
+        imageData = await JSRuntime.InvokeAsync<string>("getSignatureImage", canvas);
+
+        // Trigger file download
+        await JSRuntime.InvokeVoidAsync("downloadFile", imageData, "signature.png");
+    }
+
+    private async Task ResetSignature()
+    {
+        await JSRuntime.InvokeVoidAsync("clearCanvas", canvas);
+        imageData = null;
+    }
+
+    private async Task ChangeColor(ChangeEventArgs e)
+    {
+        selectedColor = e.Value.ToString();
+        await JSRuntime.InvokeVoidAsync("changeColor", canvas, selectedColor);
+    }
+
+    private async Task UpdateCanvasSize()
+    {
+        // Set canvas width and height to 500px and 400px respectively
+        await JSRuntime.InvokeVoidAsync("setCanvasSize", canvas, 500, 400);
+    }
+}
