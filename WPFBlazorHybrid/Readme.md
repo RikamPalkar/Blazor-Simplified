@@ -1,0 +1,2 @@
+Who would have thought there would come a day when we would all witness the blend of two of the best UI frameworks: WPF and Blazor? I've had the opportunity to work with both. Now, the dawn of this era is here, and it's time to seize the opportunity. you can now harness the power of both UI frameworks and create hybrid apps. An app that runs seamlessly on both desktop and web platforms. Well, folks, that day has finally arrived. Let's get cracking.
+Read article in detail [https://www.c-sharpcorner.com/article/lets-create-wpf-blazor-hybrid-app/]
