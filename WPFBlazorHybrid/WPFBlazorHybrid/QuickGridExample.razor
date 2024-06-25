@@ -1,0 +1,63 @@
+﻿@using Microsoft.AspNetCore.Components.QuickGrid
+
+<h1> Loading HTML in a WPF App: Not XAML </h1>
+<h3>Programming Languages</h3>
+
+<QuickGrid Items="@languages">
+    <PropertyColumn Title="Name" Property="@(p => p.Name)" Sortable="true" />
+    <PropertyColumn Title="Creator" Property="@(p => p.Creator)" Sortable="true" />
+    <PropertyColumn Title="Year of Creation"  Property="@(p => p.YearOfCreation)" Format="yyyy" Sortable="true" />
+</QuickGrid>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        border: 2px solid #ccc;
+    }
+
+    th, td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    h1, h3 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #333;
+        text-align: center;
+    }
+
+    th {
+        background-color: #28b463;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        border: none;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    th:hover {
+        background-color: #45a049;
+    }
+
+</style>
+
+@code {
+    record ProgrammingLanguage(string Name, string Creator, DateTime YearOfCreation);
+    private IQueryable<ProgrammingLanguage> languages = new List<ProgrammingLanguage>
+    {
+        new ProgrammingLanguage("C", "Dennis Ritchie", new DateTime(1972, 1, 1)),
+        new ProgrammingLanguage("C++", "Bjarne Stroustrup", new DateTime(1983, 1, 1)),
+        new ProgrammingLanguage("Java", "James Gosling", new DateTime(1995, 1, 1)),
+        new ProgrammingLanguage("Python", "Guido van Rossum", new DateTime(1991, 1, 1)),
+        new ProgrammingLanguage("JavaScript", "Brendan Eich", new DateTime(1995, 1, 1)),
+        new ProgrammingLanguage("C#", "Anders Hejlsberg", new DateTime(2000, 1, 1)),
+        new ProgrammingLanguage("Swift", "Chris Lattner", new DateTime(2014, 1, 1)),
+        new ProgrammingLanguage("Go", "Robert Griesemer, Rob Pike, Ken Thompson", new DateTime(2009, 1, 1)),
+        new ProgrammingLanguage("Rust", "Graydon Hoare", new DateTime(2010, 1, 1)),
+        new ProgrammingLanguage("Kotlin", "JetBrains", new DateTime(2011, 1, 1))
+    }.AsQueryable();
+}
