@@ -1,0 +1,27 @@
+﻿@page "/movies"
+
+@using MyFirstBlazorWebApp.Components.UI
+@using MyFirstBlazorWebApp.Models
+
+<h3>Marvel Movies</h3>
+
+<MovieTemplate Items="movies">
+    <ItemTemplate Context="selectedMovie">
+        <div class="list-group-item">
+            <h5>@selectedMovie.Title</h5>
+            <p><strong>Director:</strong> @selectedMovie.Director</p>
+            <p><strong>Release Year:</strong> @selectedMovie.ReleaseYear</p>
+        </div>
+    </ItemTemplate>
+</MovieTemplate>
+
+@code {
+    private List<Movie> movies = new List<Movie>
+    {
+        new Movie { Title = "Iron Man", Director = "Jon Favreau", ReleaseYear = 2008 },
+        new Movie { Title = "The Avengers", Director = "Joss Whedon", ReleaseYear = 2012 },
+        new Movie { Title = "Guardians of the Galaxy", Director = "James Gunn", ReleaseYear = 2014 },
+        new Movie { Title = "Black Panther", Director = "Ryan Coogler", ReleaseYear = 2018 },
+        new Movie { Title = "Avengers: Endgame", Director = "Anthony and Joe Russo", ReleaseYear = 2019 }
+    };
+}

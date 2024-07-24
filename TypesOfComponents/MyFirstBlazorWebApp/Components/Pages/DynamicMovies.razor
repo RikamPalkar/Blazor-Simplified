@@ -1,0 +1,51 @@
+﻿@page "/dynamicmovies"
+
+@using MyFirstBlazorWebApp.Components.UI
+@rendermode InteractiveServer
+
+<h3>Dynamically Load Movies</h3>
+
+<p>
+    <label>
+        Select a Marvel superhero:
+        <select @onchange="OnDropdownChange">
+            <option value="">Select a superhero</option>
+            @foreach (var superHero in superheroes.Keys)
+            {
+                <option value="@superHero">@superHero</option>
+            }
+        </select>
+    </label>
+</p>
+
+@if (selectedSuperhero is not null)
+{
+    <div class="border my-1 p-1 rounded-2">
+        <DynamicComponent Type="superheroes[selectedSuperhero]" />
+    </div>
+}
+
+@code {
+    private string selectedSuperhero;
+
+    private readonly Dictionary<string, Type> superheroes = new()
+    {
+         ["Iron Man"] = typeof(IronMan),
+         ["Captain America"] = typeof(CaptainAmerica),
+         ["Thor"] = typeof(Thor),
+         ["Black Widow"] = typeof(BlackWidow),
+         ["Spider-Man"] = typeof(SpiderMan)
+    };
+
+    private void OnDropdownChange(ChangeEventArgs e)
+    {
+        if ((e.Value is string dropdownValue) && !String.IsNullOrWhiteSpace(dropdownValue))
+        {
+            selectedSuperhero = dropdownValue;
+        }
+        else
+        {
+            selectedSuperhero = null;
+        }
+    }
+}
