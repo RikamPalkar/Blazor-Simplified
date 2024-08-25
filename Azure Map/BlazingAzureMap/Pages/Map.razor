@@ -1,0 +1,22 @@
+@page "/map"
+@inject IJSRuntime JS;
+<div id="mapContainer"></div>
+<style>
+    #mapContainer
+    {
+        border: 3px gray solid;
+        border-radius: 5px;
+        height: 750px;
+        width: 1200px;
+    }
+</style>
+@code{
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JS.InvokeVoidAsync("AzureMap.LoadMap", "key");
+        }
+    }
+
+}
