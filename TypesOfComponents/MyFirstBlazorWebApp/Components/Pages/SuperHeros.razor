@@ -1,0 +1,26 @@
+﻿@page "/superheroes"
+
+@using Models
+@using MyFirstBlazorWebApp.Components.UI;
+
+<h3>Marvel Superheroes</h3>
+
+<div class="row">
+    @foreach (var hero in superheroes)
+    {
+        <div class="col-md-4">
+            <SuperHero Hero="hero" />
+        </div>
+    }
+</div>
+
+@code {
+    private List<Superhero> superheroes = new List<Superhero>
+    {
+        new Superhero { Name = "Spider-Man", Superpower = "Wall-crawling, web-shooting, spider-sense" },
+        new Superhero { Name = "Iron Man", Superpower = "Genius-level intellect, powered armor suit" },
+        new Superhero { Name = "Captain America", Superpower = "Superhuman strength, agility, endurance" },
+        new Superhero { Name = "Thor", Superpower = "God of Thunder, superhuman strength, control over lightning" },
+        new Superhero { Name = "Hulk", Superpower = "Unlimited strength, invulnerability" }
+    };
+}

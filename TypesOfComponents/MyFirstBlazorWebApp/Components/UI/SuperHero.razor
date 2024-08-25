@@ -1,0 +1,12 @@
+﻿@using MyFirstBlazorWebApp.Models
+
+<div class="card mb-3">
+    <div class="card-body">
+        <h5 class="card-title">@Hero.Name</h5>
+        <p class="card-text"><strong>Superpowers:</strong> @Hero.Superpower</p>
+    </div>
+</div>
+
+@code {
+    [Parameter] public Superhero Hero { get; set; }
+}
