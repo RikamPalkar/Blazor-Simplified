@@ -1,0 +1,18 @@
+﻿@page "/inject-attribute-demo"
+<h3>Inject Attribute Example</h3>
+<p>Unique ID (Transient): @TransientService.GenerateUniqueId()</p>
+<p>Request Count (Scoped): @ScopedService.GetRequestCount()</p>
+<p>Application Start Time (Singleton): @SingletonService.GetApplicationStartTime()</p>
+
+@code {
+    [Inject] private ITransientService TransientService { get; set; }
+    [Inject] private IScopedService ScopedService { get; set; }
+    [Inject] private ISingletonService SingletonService { get; set; }
+
+    protected override void OnInitialized()
+    {
+        var id = TransientService.GenerateUniqueId();
+        var count = ScopedService.GetRequestCount();
+        var time = SingletonService.GetApplicationStartTime();
+    }
+}
