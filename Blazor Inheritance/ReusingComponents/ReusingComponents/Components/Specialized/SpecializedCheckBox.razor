@@ -1,0 +1,15 @@
+﻿@inherits CheckBox
+
+<div style="color:green;">
+    <input type="checkbox" @bind-value="IsChecked" @bind-value:event="onchange" id="@Id" />
+    <label for="@Id">@Label (Specialized)</label>
+    <br>
+    @if (!string.IsNullOrEmpty(AdditionalMessage))
+    {
+        <span>@AdditionalMessage</span>
+    }
+</div>
+
+@code {
+    [Parameter] public string AdditionalMessage { get; set; }
+}

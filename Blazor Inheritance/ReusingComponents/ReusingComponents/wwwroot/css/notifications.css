@@ -1,0 +1,100 @@
+﻿/* Notification container */
+.notification-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Notification box styles */
+.notification-base {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 1;
+}
+
+.notification-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #888;
+}
+
+.success-notification {
+    border-color: #4caf50;
+    background-color: #e8f5e9;
+    color: #4caf50;
+}
+
+.error-notification {
+    border-color: #f44336;
+    background-color: #ffebee;
+    color: #f44336;
+}
+
+.normal-notification {
+    border-color: #2196f3;
+    background-color: #e3f2fd;
+    color: #2196f3;
+}
+
+.warning-notification {
+    border-color: #ff9800;
+    background-color: #fff3e0;
+    color: #ff9800;
+}
+
+/* Buttons */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+    .btn:active {
+        transform: scale(0.95);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+.success-btn {
+    background-color: #4caf50;
+}
+
+.error-btn {
+    background-color: #f44336;
+}
+
+.normal-btn {
+    background-color: #2196f3;
+}
+
+.warning-btn {
+    background-color: #ff9800;
+}

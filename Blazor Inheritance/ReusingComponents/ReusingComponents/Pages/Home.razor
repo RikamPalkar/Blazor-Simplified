@@ -1,0 +1,8 @@
+﻿@page "/"
+@using ReusingComponents.Components.Base
+@using ReusingComponents.Components.Specialized
+
+@* <NotificationsDemo></NotificationsDemo>  *@
+
+<CheckBox Label="Regular Checkbox" IsCheckedChanged="@(checkedValue => Console.WriteLine($"BaseCheckBox: {checkedValue}"))" />
+<SpecializedCheckBox Label="Checkbox" IsCheckedChanged="@(checkedValue => Console.WriteLine($"SpecializedCheckBox: {checkedValue}"))" AdditionalMessage="This is extended parameter" />

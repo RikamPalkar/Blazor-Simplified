@@ -1,0 +1,21 @@
+﻿<div class="notification-base @CssClass">
+    <div class="notification-header">
+        <span class="notification-title">@Title</span>
+        <button class="close-button" @onclick="Dismiss">X</button>
+    </div>
+    <div class="notification-body">
+        @Message
+    </div>
+</div>
+
+@code {
+    [Parameter] public string Title { get; set; } = "Notification";
+    [Parameter] public string Message { get; set; } = string.Empty;
+    [Parameter] public EventCallback OnDismiss { get; set; }
+    [Parameter] public string CssClass { get; set; } = string.Empty;
+
+    private void Dismiss()
+    {
+        OnDismiss.InvokeAsync();
+    }
+}

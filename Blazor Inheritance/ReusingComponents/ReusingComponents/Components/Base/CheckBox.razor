@@ -1,0 +1,20 @@
+﻿<div style="color:red;">
+    <input type="checkbox" @bind="IsChecked" id="@Id" />
+    <label for="@Id">@Label</label>
+</div>
+
+@code {
+    [Parameter] public string Id { get; set; } = Guid.NewGuid().ToString();
+    [Parameter] public string Label { get; set; } = string.Empty;
+    [Parameter] public bool IsChecked { get; set; }
+    [Parameter] public EventCallback<bool> IsCheckedChanged { get; set; }
+
+    protected async Task OnChange(ChangeEventArgs e)
+    {
+        if (bool.TryParse(e.Value?.ToString(), out var newValue))
+        {
+            IsChecked = newValue;
+            await IsCheckedChanged.InvokeAsync(newValue);
+        }
+    }
+}

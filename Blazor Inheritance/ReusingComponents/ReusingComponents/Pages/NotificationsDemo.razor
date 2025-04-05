@@ -1,0 +1,34 @@
+﻿
+
+<div class="button-container">
+    <button class="btn success-btn" @onclick="() => IsSuccess = true">Show Success</button>
+    <button class="btn error-btn" @onclick="() => IsError = true">Show Error</button>
+    <button class="btn normal-btn" @onclick="() => IsInfo = true">Show Normal</button>
+    <button class="btn warning-btn" @onclick="() => IsWarning = true">Show Warning</button>
+</div>
+
+<div class="notification-container">
+    @if (IsSuccess)
+    {
+        <SuccessNotification Title="Success" Message="Phew! Everything's under control!" OnDismiss="@(() => IsSuccess = false)" />
+    }
+    @if (IsWarning)
+    {
+        <WarningNotification Title="Warning" Message="Hmm... better watch out!" OnDismiss="@(() => IsWarning = false)" />
+    }
+    @if (IsInfo)
+    {
+        <InfoNotification Title="Info" Message="Just a friendly heads-up!" OnDismiss="@(() => IsInfo = false)" />
+    }
+    @if (IsError)
+    {
+        <ErrorNotification Title="Error" Message="Oh no, something went horribly wrong!" OnDismiss="@(() => IsError = false)" />
+    }
+</div>
+
+@code {
+    bool IsSuccess = false;
+    bool IsError = false;
+    bool IsWarning = false;
+    bool IsInfo = false;
+}

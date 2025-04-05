@@ -1,0 +1,11 @@
+﻿@inherits NotificationBase;
+
+<span class="notification-icon">@Icon</span>
+<NotificationBase Title="@Title"
+                  Message="@Message"
+                  CssClass="success-notification"
+                  OnDismiss="@OnDismiss" />
+
+@code {
+    [Parameter] public string Icon { get; set; } = "✅";
+}
