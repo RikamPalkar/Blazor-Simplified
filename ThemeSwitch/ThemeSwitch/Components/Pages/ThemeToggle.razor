@@ -1,0 +1,19 @@
+﻿@rendermode InteractiveServer
+@inject IJSRuntime JS
+
+<button class="theme-toggle" @onclick="ToggleTheme">Toggle Dark Mode</button>
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JS.InvokeVoidAsync("applySavedTheme");
+        }
+    }
+
+    private async Task ToggleTheme()
+    {
+        await JS.InvokeVoidAsync("toggleDarkMode");
+    }
+}
