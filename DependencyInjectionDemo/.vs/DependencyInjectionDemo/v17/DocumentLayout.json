@@ -1,0 +1,316 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Resources\\Blazor Apps Learnigs\\DependencyInjectionDemo\\DependencyInjectionDemo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{23F39D85-D143-49B9-B81E-4EC1DC92BB39}|DependencyInjectionDemo\\DependencyInjectionDemo.csproj|d:\\resources\\blazor apps learnigs\\dependencyinjectiondemo\\dependencyinjectiondemo\\dependencyinjectiondemo\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{23F39D85-D143-49B9-B81E-4EC1DC92BB39}|DependencyInjectionDemo\\DependencyInjectionDemo.csproj|solutionrelative:dependencyinjectiondemo\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23F39D85-D143-49B9-B81E-4EC1DC92BB39}|DependencyInjectionDemo\\DependencyInjectionDemo.csproj|d:\\resources\\blazor apps learnigs\\dependencyinjectiondemo\\dependencyinjectiondemo\\dependencyinjectiondemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23F39D85-D143-49B9-B81E-4EC1DC92BB39}|DependencyInjectionDemo\\DependencyInjectionDemo.csproj|solutionrelative:dependencyinjectiondemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23F39D85-D143-49B9-B81E-4EC1DC92BB39}|DependencyInjectionDemo\\DependencyInjectionDemo.csproj|d:\\resources\\blazor apps learnigs\\dependencyinjectiondemo\\dependencyinjectiondemo\\dependencyinjectiondemo\\services\\scopedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23F39D85-D143-49B9-B81E-4EC1DC92BB39}|DependencyInjectionDemo\\DependencyInjectionDemo.csproj|solutionrelative:dependencyinjectiondemo\\services\\scopedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23F39D85-D143-49B9-B81E-4EC1DC92BB39}|DependencyInjectionDemo\\DependencyInjectionDemo.csproj|d:\\resources\\blazor apps learnigs\\dependencyinjectiondemo\\dependencyinjectiondemo\\dependencyinjectiondemo\\services\\greetingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23F39D85-D143-49B9-B81E-4EC1DC92BB39}|DependencyInjectionDemo\\DependencyInjectionDemo.csproj|solutionrelative:dependencyinjectiondemo\\services\\greetingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23F39D85-D143-49B9-B81E-4EC1DC92BB39}|DependencyInjectionDemo\\DependencyInjectionDemo.csproj|d:\\resources\\blazor apps learnigs\\dependencyinjectiondemo\\dependencyinjectiondemo\\dependencyinjectiondemo\\services\\singletonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23F39D85-D143-49B9-B81E-4EC1DC92BB39}|DependencyInjectionDemo\\DependencyInjectionDemo.csproj|solutionrelative:dependencyinjectiondemo\\services\\singletonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23F39D85-D143-49B9-B81E-4EC1DC92BB39}|DependencyInjectionDemo\\DependencyInjectionDemo.csproj|d:\\resources\\blazor apps learnigs\\dependencyinjectiondemo\\dependencyinjectiondemo\\dependencyinjectiondemo\\services\\transientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23F39D85-D143-49B9-B81E-4EC1DC92BB39}|DependencyInjectionDemo\\DependencyInjectionDemo.csproj|solutionrelative:dependencyinjectiondemo\\services\\transientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23F39D85-D143-49B9-B81E-4EC1DC92BB39}|DependencyInjectionDemo\\DependencyInjectionDemo.csproj|d:\\resources\\blazor apps learnigs\\dependencyinjectiondemo\\dependencyinjectiondemo\\dependencyinjectiondemo\\pages\\injectdirectivedemo.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{23F39D85-D143-49B9-B81E-4EC1DC92BB39}|DependencyInjectionDemo\\DependencyInjectionDemo.csproj|solutionrelative:dependencyinjectiondemo\\pages\\injectdirectivedemo.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23F39D85-D143-49B9-B81E-4EC1DC92BB39}|DependencyInjectionDemo\\DependencyInjectionDemo.csproj|d:\\resources\\blazor apps learnigs\\dependencyinjectiondemo\\dependencyinjectiondemo\\dependencyinjectiondemo\\pages\\injectattributedemo.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{23F39D85-D143-49B9-B81E-4EC1DC92BB39}|DependencyInjectionDemo\\DependencyInjectionDemo.csproj|solutionrelative:dependencyinjectiondemo\\pages\\injectattributedemo.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23F39D85-D143-49B9-B81E-4EC1DC92BB39}|DependencyInjectionDemo\\DependencyInjectionDemo.csproj|d:\\resources\\blazor apps learnigs\\dependencyinjectiondemo\\dependencyinjectiondemo\\dependencyinjectiondemo\\services\\weatherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23F39D85-D143-49B9-B81E-4EC1DC92BB39}|DependencyInjectionDemo\\DependencyInjectionDemo.csproj|solutionrelative:dependencyinjectiondemo\\services\\weatherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23F39D85-D143-49B9-B81E-4EC1DC92BB39}|DependencyInjectionDemo\\DependencyInjectionDemo.csproj|d:\\resources\\blazor apps learnigs\\dependencyinjectiondemo\\dependencyinjectiondemo\\dependencyinjectiondemo\\services\\interfaces\\iweatherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23F39D85-D143-49B9-B81E-4EC1DC92BB39}|DependencyInjectionDemo\\DependencyInjectionDemo.csproj|solutionrelative:dependencyinjectiondemo\\services\\interfaces\\iweatherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23F39D85-D143-49B9-B81E-4EC1DC92BB39}|DependencyInjectionDemo\\DependencyInjectionDemo.csproj|d:\\resources\\blazor apps learnigs\\dependencyinjectiondemo\\dependencyinjectiondemo\\dependencyinjectiondemo\\pages\\serviceparameter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{23F39D85-D143-49B9-B81E-4EC1DC92BB39}|DependencyInjectionDemo\\DependencyInjectionDemo.csproj|solutionrelative:dependencyinjectiondemo\\pages\\serviceparameter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23F39D85-D143-49B9-B81E-4EC1DC92BB39}|DependencyInjectionDemo\\DependencyInjectionDemo.csproj|d:\\resources\\blazor apps learnigs\\dependencyinjectiondemo\\dependencyinjectiondemo\\dependencyinjectiondemo\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{23F39D85-D143-49B9-B81E-4EC1DC92BB39}|DependencyInjectionDemo\\DependencyInjectionDemo.csproj|solutionrelative:dependencyinjectiondemo\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23F39D85-D143-49B9-B81E-4EC1DC92BB39}|DependencyInjectionDemo\\DependencyInjectionDemo.csproj|d:\\resources\\blazor apps learnigs\\dependencyinjectiondemo\\dependencyinjectiondemo\\dependencyinjectiondemo\\services\\interfaces\\itransientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23F39D85-D143-49B9-B81E-4EC1DC92BB39}|DependencyInjectionDemo\\DependencyInjectionDemo.csproj|solutionrelative:dependencyinjectiondemo\\services\\interfaces\\itransientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23F39D85-D143-49B9-B81E-4EC1DC92BB39}|DependencyInjectionDemo\\DependencyInjectionDemo.csproj|d:\\resources\\blazor apps learnigs\\dependencyinjectiondemo\\dependencyinjectiondemo\\dependencyinjectiondemo\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{23F39D85-D143-49B9-B81E-4EC1DC92BB39}|DependencyInjectionDemo\\DependencyInjectionDemo.csproj|solutionrelative:dependencyinjectiondemo\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23F39D85-D143-49B9-B81E-4EC1DC92BB39}|DependencyInjectionDemo\\DependencyInjectionDemo.csproj|d:\\resources\\blazor apps learnigs\\dependencyinjectiondemo\\dependencyinjectiondemo\\dependencyinjectiondemo\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{23F39D85-D143-49B9-B81E-4EC1DC92BB39}|DependencyInjectionDemo\\DependencyInjectionDemo.csproj|solutionrelative:dependencyinjectiondemo\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23F39D85-D143-49B9-B81E-4EC1DC92BB39}|DependencyInjectionDemo\\DependencyInjectionDemo.csproj|d:\\resources\\blazor apps learnigs\\dependencyinjectiondemo\\dependencyinjectiondemo\\dependencyinjectiondemo\\services\\interfaces\\igreetingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23F39D85-D143-49B9-B81E-4EC1DC92BB39}|DependencyInjectionDemo\\DependencyInjectionDemo.csproj|solutionrelative:dependencyinjectiondemo\\services\\interfaces\\igreetingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 303,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Weather.razor",
+              "DocumentMoniker": "D:\\Resources\\Blazor Apps Learnigs\\DependencyInjectionDemo\\DependencyInjectionDemo\\DependencyInjectionDemo\\Pages\\Weather.razor",
+              "RelativeDocumentMoniker": "DependencyInjectionDemo\\Pages\\Weather.razor",
+              "ToolTip": "D:\\Resources\\Blazor Apps Learnigs\\DependencyInjectionDemo\\DependencyInjectionDemo\\DependencyInjectionDemo\\Pages\\Weather.razor",
+              "RelativeToolTip": "DependencyInjectionDemo\\Pages\\Weather.razor",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAwBkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-21T08:23:02.268Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "WeatherService.cs",
+              "DocumentMoniker": "D:\\Resources\\Blazor Apps Learnigs\\DependencyInjectionDemo\\DependencyInjectionDemo\\DependencyInjectionDemo\\Services\\WeatherService.cs",
+              "RelativeDocumentMoniker": "DependencyInjectionDemo\\Services\\WeatherService.cs",
+              "ToolTip": "D:\\Resources\\Blazor Apps Learnigs\\DependencyInjectionDemo\\DependencyInjectionDemo\\DependencyInjectionDemo\\Services\\WeatherService.cs",
+              "RelativeToolTip": "DependencyInjectionDemo\\Services\\WeatherService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T08:21:58.775Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ScopedService.cs",
+              "DocumentMoniker": "D:\\Resources\\Blazor Apps Learnigs\\DependencyInjectionDemo\\DependencyInjectionDemo\\DependencyInjectionDemo\\Services\\ScopedService.cs",
+              "RelativeDocumentMoniker": "DependencyInjectionDemo\\Services\\ScopedService.cs",
+              "ToolTip": "D:\\Resources\\Blazor Apps Learnigs\\DependencyInjectionDemo\\DependencyInjectionDemo\\DependencyInjectionDemo\\Services\\ScopedService.cs",
+              "RelativeToolTip": "DependencyInjectionDemo\\Services\\ScopedService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T12:54:26.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SingletonService.cs",
+              "DocumentMoniker": "D:\\Resources\\Blazor Apps Learnigs\\DependencyInjectionDemo\\DependencyInjectionDemo\\DependencyInjectionDemo\\Services\\SingletonService.cs",
+              "RelativeDocumentMoniker": "DependencyInjectionDemo\\Services\\SingletonService.cs",
+              "ToolTip": "D:\\Resources\\Blazor Apps Learnigs\\DependencyInjectionDemo\\DependencyInjectionDemo\\DependencyInjectionDemo\\Services\\SingletonService.cs",
+              "RelativeToolTip": "DependencyInjectionDemo\\Services\\SingletonService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T09:01:57.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TransientService.cs",
+              "DocumentMoniker": "D:\\Resources\\Blazor Apps Learnigs\\DependencyInjectionDemo\\DependencyInjectionDemo\\DependencyInjectionDemo\\Services\\TransientService.cs",
+              "RelativeDocumentMoniker": "DependencyInjectionDemo\\Services\\TransientService.cs",
+              "ToolTip": "D:\\Resources\\Blazor Apps Learnigs\\DependencyInjectionDemo\\DependencyInjectionDemo\\DependencyInjectionDemo\\Services\\TransientService.cs",
+              "RelativeToolTip": "DependencyInjectionDemo\\Services\\TransientService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T12:54:08.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "InjectAttributeDemo.razor",
+              "DocumentMoniker": "D:\\Resources\\Blazor Apps Learnigs\\DependencyInjectionDemo\\DependencyInjectionDemo\\DependencyInjectionDemo\\Pages\\InjectAttributeDemo.razor",
+              "RelativeDocumentMoniker": "DependencyInjectionDemo\\Pages\\InjectAttributeDemo.razor",
+              "ToolTip": "D:\\Resources\\Blazor Apps Learnigs\\DependencyInjectionDemo\\DependencyInjectionDemo\\DependencyInjectionDemo\\Pages\\InjectAttributeDemo.razor",
+              "RelativeToolTip": "DependencyInjectionDemo\\Pages\\InjectAttributeDemo.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-21T09:07:35.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "InjectDirectiveDemo.razor",
+              "DocumentMoniker": "D:\\Resources\\Blazor Apps Learnigs\\DependencyInjectionDemo\\DependencyInjectionDemo\\DependencyInjectionDemo\\Pages\\InjectDirectiveDemo.razor",
+              "RelativeDocumentMoniker": "DependencyInjectionDemo\\Pages\\InjectDirectiveDemo.razor",
+              "ToolTip": "D:\\Resources\\Blazor Apps Learnigs\\DependencyInjectionDemo\\DependencyInjectionDemo\\DependencyInjectionDemo\\Pages\\InjectDirectiveDemo.razor",
+              "RelativeToolTip": "DependencyInjectionDemo\\Pages\\InjectDirectiveDemo.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-21T09:07:33.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Resources\\Blazor Apps Learnigs\\DependencyInjectionDemo\\DependencyInjectionDemo\\DependencyInjectionDemo\\Program.cs",
+              "RelativeDocumentMoniker": "DependencyInjectionDemo\\Program.cs",
+              "ToolTip": "D:\\Resources\\Blazor Apps Learnigs\\DependencyInjectionDemo\\DependencyInjectionDemo\\DependencyInjectionDemo\\Program.cs",
+              "RelativeToolTip": "DependencyInjectionDemo\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T08:26:25.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ITransientService.cs",
+              "DocumentMoniker": "D:\\Resources\\Blazor Apps Learnigs\\DependencyInjectionDemo\\DependencyInjectionDemo\\DependencyInjectionDemo\\Services\\Interfaces\\ITransientService.cs",
+              "RelativeDocumentMoniker": "DependencyInjectionDemo\\Services\\Interfaces\\ITransientService.cs",
+              "ToolTip": "D:\\Resources\\Blazor Apps Learnigs\\DependencyInjectionDemo\\DependencyInjectionDemo\\DependencyInjectionDemo\\Services\\Interfaces\\ITransientService.cs",
+              "RelativeToolTip": "DependencyInjectionDemo\\Services\\Interfaces\\ITransientService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T10:00:00.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GreetingService.cs",
+              "DocumentMoniker": "D:\\Resources\\Blazor Apps Learnigs\\DependencyInjectionDemo\\DependencyInjectionDemo\\DependencyInjectionDemo\\Services\\GreetingService.cs",
+              "RelativeDocumentMoniker": "DependencyInjectionDemo\\Services\\GreetingService.cs",
+              "ToolTip": "D:\\Resources\\Blazor Apps Learnigs\\DependencyInjectionDemo\\DependencyInjectionDemo\\DependencyInjectionDemo\\Services\\GreetingService.cs",
+              "RelativeToolTip": "DependencyInjectionDemo\\Services\\GreetingService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T09:05:39.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IWeatherService.cs",
+              "DocumentMoniker": "D:\\Resources\\Blazor Apps Learnigs\\DependencyInjectionDemo\\DependencyInjectionDemo\\DependencyInjectionDemo\\Services\\Interfaces\\IWeatherService.cs",
+              "RelativeDocumentMoniker": "DependencyInjectionDemo\\Services\\Interfaces\\IWeatherService.cs",
+              "ToolTip": "D:\\Resources\\Blazor Apps Learnigs\\DependencyInjectionDemo\\DependencyInjectionDemo\\DependencyInjectionDemo\\Services\\Interfaces\\IWeatherService.cs",
+              "RelativeToolTip": "DependencyInjectionDemo\\Services\\Interfaces\\IWeatherService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T10:35:51.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\Resources\\Blazor Apps Learnigs\\DependencyInjectionDemo\\DependencyInjectionDemo\\DependencyInjectionDemo\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "DependencyInjectionDemo\\Pages\\Home.razor",
+              "ToolTip": "D:\\Resources\\Blazor Apps Learnigs\\DependencyInjectionDemo\\DependencyInjectionDemo\\DependencyInjectionDemo\\Pages\\Home.razor",
+              "RelativeToolTip": "DependencyInjectionDemo\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-21T08:26:57.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ServiceParameter.razor",
+              "DocumentMoniker": "D:\\Resources\\Blazor Apps Learnigs\\DependencyInjectionDemo\\DependencyInjectionDemo\\DependencyInjectionDemo\\Pages\\ServiceParameter.razor",
+              "RelativeDocumentMoniker": "DependencyInjectionDemo\\Pages\\ServiceParameter.razor",
+              "ToolTip": "D:\\Resources\\Blazor Apps Learnigs\\DependencyInjectionDemo\\DependencyInjectionDemo\\DependencyInjectionDemo\\Pages\\ServiceParameter.razor",
+              "RelativeToolTip": "DependencyInjectionDemo\\Pages\\ServiceParameter.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-21T09:07:15.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "D:\\Resources\\Blazor Apps Learnigs\\DependencyInjectionDemo\\DependencyInjectionDemo\\DependencyInjectionDemo\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "DependencyInjectionDemo\\Layout\\NavMenu.razor",
+              "ToolTip": "D:\\Resources\\Blazor Apps Learnigs\\DependencyInjectionDemo\\DependencyInjectionDemo\\DependencyInjectionDemo\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "DependencyInjectionDemo\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-21T09:07:50.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\Resources\\Blazor Apps Learnigs\\DependencyInjectionDemo\\DependencyInjectionDemo\\DependencyInjectionDemo\\_Imports.razor",
+              "RelativeDocumentMoniker": "DependencyInjectionDemo\\_Imports.razor",
+              "ToolTip": "D:\\Resources\\Blazor Apps Learnigs\\DependencyInjectionDemo\\DependencyInjectionDemo\\DependencyInjectionDemo\\_Imports.razor",
+              "RelativeToolTip": "DependencyInjectionDemo\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-21T09:07:38.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IGreetingService.cs",
+              "DocumentMoniker": "D:\\Resources\\Blazor Apps Learnigs\\DependencyInjectionDemo\\DependencyInjectionDemo\\DependencyInjectionDemo\\Services\\Interfaces\\IGreetingService.cs",
+              "RelativeDocumentMoniker": "DependencyInjectionDemo\\Services\\Interfaces\\IGreetingService.cs",
+              "ToolTip": "D:\\Resources\\Blazor Apps Learnigs\\DependencyInjectionDemo\\DependencyInjectionDemo\\DependencyInjectionDemo\\Services\\Interfaces\\IGreetingService.cs",
+              "RelativeToolTip": "DependencyInjectionDemo\\Services\\Interfaces\\IGreetingService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T09:05:16.657Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 100,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

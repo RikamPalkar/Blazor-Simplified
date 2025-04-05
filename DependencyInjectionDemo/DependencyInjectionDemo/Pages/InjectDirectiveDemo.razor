@@ -1,0 +1,9 @@
+﻿@page "/inject-directive-demo"
+@inject ITransientService TransientService
+@inject IScopedService ScopedService
+@inject ISingletonService SingletonService
+
+<h3>Inject Directive Example</h3>
+<p>Unique ID (Transient): @TransientService.GenerateUniqueId()</p>
+<p>Request Count (Scoped): @ScopedService.GetRequestCount()</p>
+<p>Application Start Time (Singleton): @SingletonService.GetApplicationStartTime()</p>

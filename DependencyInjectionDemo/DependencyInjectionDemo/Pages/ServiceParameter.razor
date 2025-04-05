@@ -1,0 +1,21 @@
+﻿@page "/greeting"
+@inject IGreetingService GreetingService
+
+<h3>Greeting Service Example</h3>
+
+<p>Enter your name:</p>
+<input @bind="userName" placeholder="Your Name" />
+
+<p><strong>Greeting:</strong> @greetingMessage</p>
+
+<button @onclick="GenerateGreeting">Generate Greeting</button>
+
+@code {
+    private string userName = "";
+    private string greetingMessage = "";
+
+    private void GenerateGreeting()
+    {
+        greetingMessage = GreetingService.GetGreeting(userName);
+    }
+}
