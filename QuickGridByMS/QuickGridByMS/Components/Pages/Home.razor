@@ -1,0 +1,75 @@
+﻿@page "/"
+@rendermode InteractiveServer
+@using Microsoft.AspNetCore.Components.QuickGrid
+
+<style>
+    .pagination-controls {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        font-size: 12px;
+        color: #555;
+        width: 70%;
+    }
+
+        .pagination-controls button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            margin: 0 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+            .pagination-controls button:disabled {
+                background-color: #ccc;
+                color: #888;
+                cursor: not-allowed;
+            }
+
+            .pagination-controls button:hover:not(:disabled) {
+                background-color: #0056b3;
+            }
+
+        .pagination-controls span {
+            margin: 0 10px;
+            font-weight: 500;
+        }
+
+
+</style>
+<div style="width: 60%; margin: auto;">
+
+    @if (Users != null && Users.Any())
+    {
+        <input type="text" @bind="NameFilter" placeholder="Filter by Name..." />
+        <QuickGrid Items="@PagedUsers.AsQueryable()" PageSize="5">
+            <PropertyColumn Property="@(user => user.Id)" Title="ID"/>
+            <PropertyColumn Property="@(user => user.Name)" Title="Name" />
+            <PropertyColumn Property="@(user => user.Email)" Title="Email" />
+            <PropertyColumn Property="@(user => user.Age)" Title="Age" Sortable="true" />
+
+            <TemplateColumn Title="Actions" Context="user">
+                <button class="btn btn-primary btn-sm mx-1" @onclick="() => OnEdit(user)">Edit</button>
+            </TemplateColumn>
+
+            <TemplateColumn Title="Actions" Context="user">
+                <button class="btn btn-danger btn-sm mx-1" @onclick="() => OnDelete(user)">Delete</button>
+            </TemplateColumn>
+        </QuickGrid>
+        <!-- Pagination Controls -->
+        <div class="pagination-controls">
+            <button @onclick="PreviousPage" disabled="@(_currentPage == 1)">Previous</button>
+            <span>Page @_currentPage of @TotalPages</span>
+            <button @onclick="NextPage" disabled="@(_currentPage == TotalPages)">Next</button>
+        </div>
+    }
+    else
+    {
+        <p class="text-muted">No users available.</p>
+    }
+</div>

@@ -1,0 +1,52 @@
+﻿@page "/"
+@rendermode InteractiveServer
+@inject UserService UserService
+
+<h3>Rendering 10,000 User Profiles using Virtualization</h3>
+<p>This will be smooth as browser optimizes the performance.</p>
+
+<ul>
+        <Virtualize Items="@users" ItemSize="130" Context="user"> 
+        <li style="margin: 10px; padding: 20px; border: 1px solid #ccc;">
+            <div style="display: flex; align-items: center;">
+                <!-- Conditional styling for FTE employees -->
+                <div style="@GetImageBorderStyle(user.IsEmployeeFTE)">
+                    <img src="Images/User-Logo.png" alt="User Logo" style="width: 100px; height: 100px;" />
+                </div>
+                <div style="margin-left: 20px;">
+                    <h4>@user.Name</h4>
+                    <p style="font-size: 14px;">@user.Description</p>
+                    <label>
+                        <input type="checkbox" @bind="user.IsEmployeeFTE" />
+                        Is FTE
+                    </label>
+                </div>
+            </div>
+        </li>
+        </Virtualize> 
+</ul>
+
+@code {
+    private List<User> users;
+
+    protected override void OnInitialized()
+    {
+        // Generate 20,000 users with alternating FTE status
+        users = UserService.GetUsers(20000);
+    }
+
+    // Method to conditionally style the image container
+    private string GetImageBorderStyle(bool isFTE)
+    {
+        if (isFTE)
+        {
+            // Apply green border for FTE
+            return "border: 5px solid green; padding: 5px;";
+        }
+        else
+        {
+            // Apply red border for non-FTE
+            return "border: 5px solid red; padding: 5px;";
+        }
+    }
+}
