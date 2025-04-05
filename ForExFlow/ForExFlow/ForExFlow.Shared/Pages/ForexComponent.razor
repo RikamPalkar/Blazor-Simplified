@@ -1,0 +1,188 @@
+﻿@page "/"
+<h3>Exchange Rates</h3>
+
+<div class="input-container">
+    <label for="userInputCountry">Country:</label>
+    <select id="userInputCountry" @onchange="OnBaseCurrencyChange">
+        <option value="INR">India (INR)</option>
+        @foreach (var currency in Currencies.Where(c => c != "INR"))
+        {
+            <option value="@currency">@currency</option>
+        }
+    </select>
+</div>
+
+<div class="input-container">
+    <label for="userInput">Units:</label>
+    <div class="units-and-button">
+        <input type="number" id="userInput" @bind="userInput" placeholder="Enter units" />
+        <button @onclick="ConvertRates">Convert</button>
+    </div>
+</div>
+
+@if (ExchangeRates != null)
+{
+    <div class="table-container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Currency</th>
+                    <th>Rate</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var rate in ExchangeRates)
+                {
+                    <tr>
+                        <td>@rate.Key</td>
+                        <td>@rate.Value</td>
+                        <td>@MultiplyRate(rate.Value)</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <p>Loading exchange rates...</p>
+}
+
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f4f6f9;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 1.8rem;
+        color: #2c3e50;
+        margin: 20px 0;
+    }
+
+    .input-container {
+        width: 60%;
+        margin: 0 auto 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+        .input-container label {
+            font-size: 1rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+
+        .input-container select,
+        .input-container input {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border-color 0.3s ease;
+            text-align: left;
+        }
+
+            .input-container select:focus,
+            .input-container input:focus {
+                border-color: #3498db;
+                outline: none;
+            }
+
+    .units-and-button {
+        display: flex;
+        width: 60%;
+        gap: 10px;
+        margin: 0 auto;
+    }
+
+        .units-and-button input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .units-and-button button {
+            flex: 1;
+            padding: 10px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+            .units-and-button button:hover {
+                background-color: #217dbb;
+            }
+
+    .table-container {
+        width: 80%;
+        margin: 20px auto;
+        max-height: 400px;
+        overflow-y: auto;
+    }
+
+    table {
+        width: 100%;
+        margin: 0;
+        border-collapse: collapse;
+        background-color: #fff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        table-layout: fixed; /* Ensures consistent column widths */
+    }
+
+        table thead {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        table th,
+        table td {
+            padding: 12px 15px;
+            text-align: left;
+            font-size: 0.9rem;
+            word-wrap: break-word; /* To handle long words */
+        }
+
+        table th {
+            width: 33%; /* Equal width for each column header */
+        }
+
+        table td {
+            width: 33%; /* Equal width for each table data cell */
+        }
+
+        table tbody {
+            width: 100%;
+        }
+
+            table tbody tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+
+            table tbody tr:hover {
+                background-color: #f0f7ff;
+                cursor: pointer;
+            }
+
+    p {
+        text-align: center;
+        font-size: 1.1rem;
+        color: #95a5a6;
+        margin-top: 30px;
+    }
+</style>
